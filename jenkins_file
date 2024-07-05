@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
 
-                     '''bash 
+                     bash '''bash script.sh'''
                     
                 }
             }
