@@ -11,7 +11,10 @@ pipeline {
                 script {
                      sh "git clone https://github.com/Shiva833215/alert.git"
 
-                     sh '''sh script.sh'''
+                     sh '''
+                       cd alert
+                       sh script.sh
+                         '''
                     
                 }
             }
