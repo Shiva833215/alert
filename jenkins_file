@@ -9,12 +9,10 @@ pipeline {
         stage('Monitor System') {
             steps {
                 script {
-                     sh "git clone https://github.com/Shiva833215/alert.git"
+                     sh "git clone -b main https://github.com/Shiva833215/alert.git dir"
 
                      sh '''
-                        mkdir test
-                       cp alert/scrip.sh test
-                        cd test
+                        cd dir
                        sh script.sh
                          '''
                     
