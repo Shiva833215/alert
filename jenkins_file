@@ -9,6 +9,7 @@ pipeline {
         stage('Monitor System') {
             steps {
                 script {
+                     sh "git clone https://github.com/Shiva833215/alert.git"
 
                      sh '''sh script.sh'''
                     
