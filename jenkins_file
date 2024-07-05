@@ -18,12 +18,3 @@ pipeline {
     }
 }
 
-// Function to send email notification
-def sendNotification(subject, body) {
-    emailext (
-        subject: subject,
-        body: body,
-        to: 'your-email@example.com',  // Replace with your email address
-        mimeType: 'text/plain'
-    )
-}
