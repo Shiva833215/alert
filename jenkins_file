@@ -13,6 +13,7 @@ pipeline {
 
                      sh '''
                         cd dir
+                         ls -lt
                        sh script.sh
                          '''
                     
